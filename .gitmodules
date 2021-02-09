@@ -1,0 +1,3 @@
+[submodule "code/hate-speech-detection"]
+	path = code/hate-speech-detection
+	url = git@github.com:sagahansson/hate-speech-detection.git
