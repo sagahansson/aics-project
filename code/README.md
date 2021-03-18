@@ -2,7 +2,7 @@
 
 The code in the submodule [hate speech detection](https://github.com/sagahansson/hate-speech-detection/tree/ffb0970eb5e207d7e8d384dc872bc93095a23109) has been updated to enable running from the commandline as follows (with redudant arguments for the purpose of explaining):
 
-`$ python train.py 100 -HS 50 -E 100 -BS 25 -B 0 -T 0 --img 1 --txt 1 --lr 0.001 --cpt False --dev 0` 
+`$ python train.py 100 -HS 50 -E 100 -BS 25 -B 0 -T 0 --img 1 --txt 1 --lr 0.001 --cpt 0 --dev 0` 
 
 where `100` is the name of the file (the only positional argument, all others have default values), 
 
@@ -22,6 +22,8 @@ where `100` is the name of the file (the only positional argument, all others ha
 
 `--lr 0.001` is the learning rate of the model (default: 0.001),
 
-`--cpt False` is whether or not to start from checkpoint (either True or False; default: False),
+`--cpt 0` is whether or not to start from checkpoint (either 0 : no, or 1 : yes; default: 0),
 
 `--dev 0` is the cuda device to run the model on (either 0, 1, 2 or 3 (at some point we had 4 GPUs); default: 1).
+
+The code was also updated to produce logfiles with the name of the model. 
