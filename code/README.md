@@ -1,3 +1,3 @@
 # Code
 
-The code in the submodule [hate speech detection](./hate-speech-detection/)
+The code in the submodule [hate speech detection](../hate-speech-detection/)
